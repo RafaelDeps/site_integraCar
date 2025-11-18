@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IntegraCAR — Image Stitching</title>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- HERO -->
+    <header class="hero">
+        <nav class="navbar">
+            <div class="logo-area">
+                <img src="logo.png" alt="Logo IntegraCAR">
+                <span class="project-name">IntegraCAR</span>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#stitching">Image Stitching</a></li>
+                <li><a href="#demo">Demonstração</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+
+        <div class="hero-content">
+            <h1>Image Stitching para Análise Ambiental</h1>
+            <p>Unindo imagens do satélite CBERS-4A para criar ortomosaicos de alta resolução.</p>
+            <a href="#sobre" class="btn-primary">Começar</a>
+        </div>
+    </header>
+
+    <!-- SOBRE -->
+    <section id="sobre" class="section">
+        <h2 class="section-title">O Projeto IntegraCAR</h2>
+        <p class="section-text">
+            O IntegraCAR é uma iniciativa voltada à integração de dados geoespaciais do Cadastro Ambiental Rural no Espírito Santo,
+            facilitando análises, detecção de padrões e monitoramento rural.
+        </p>
+
+        <div class="cards">
+            <div class="card">
+                <h3>Dados Geoespaciais</h3>
+                <p>Integração de camadas ambientais para análises avançadas.</p>
+            </div>
+
+            <div class="card">
+                <h3>Automação</h3>
+                <p>Processos automáticos para preparar e validar informações.</p>
+            </div>
+
+            <div class="card">
+                <h3>Inteligência</h3>
+                <p>Uso de técnicas de visão computacional e SIG.</p>
+                <p>(Sistema de Informação Geográfica)</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- IMAGE STITCHING -->
+    <section id="stitching" class="section alt">
+        <h2 class="section-title">O que é Image Stitching?</h2>
+        <p class="section-text">
+            Uma técnica para combinar múltiplas imagens sobrepostas em um único mosaico contínuo, corrigido e georreferenciado.
+        </p>
+
+        <div class="big-card">
+            <img src="exemplo.png" alt="Exemplo de ortomosaico">
+            <div class="big-card-text">
+                <h3>Aplicações</h3>
+                <ul>
+                    <li>Mapeamento rural</li>
+                    <li>Análise ambiental</li>
+                    <li>Monitoramento agrícola</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- GIT HUB CTA -->
+<section id="github" class="section github-cta">
+  <div class="github-inner">
+    <div class="github-left">
+      <img src="logo.png" alt="Logo IntegraCAR" class="gh-logo">
+      <div>
+        <h3>Visite nosso repositório no GitHub</h3>
+        <p class="muted">Código-fonte, pipeline de Image Stitching, exemplos e instruções para reproduzir os ortomosaicos.</p>
+      </div>
+    </div>
+
+    <div class="github-right">
+      <!-- Badge de stars (substitua o user/repo) -->
+      <a class="gh-badge" href="https://github.com/SEU_USUARIO/SEU_REPOSITORIO" target="_blank" rel="noopener noreferrer">
+        <img alt="GitHub Repo" src="https://img.shields.io/github/stars/SEU_USUARIO/SEU_REPOSITORIO?style=social">
+      </a>
+
+      <!-- CTA principal -->
+      <a class="btn-gh" href="https://github.com/SEU_USUARIO/SEU_REPOSITORIO" target="_blank" rel="noopener noreferrer">
+        Abrir repositório
+      </a>
+    </div>
+  </div>
+</section>
+
+
+    <!-- CONTATO -->
+    <section id="contato" class="section">
+        <h2 class="section-title">Contato</h2>
+        <p class="section-text">Entre em contato com nossa equipe:</p>
+
+        <div class="contact-list">
+            <p><strong>professor: Francisco Boldt :</strong> email@contato.com</p>
+            <p><strong>Aluno de Mestrado: Tomir</strong> email@contato.com</p>
+            <p><strong>Aluno de graduação: Rafael Deps:</strong> rafaeldeps15@gmail.com</p>
+            <p><strong>Aluno de graduação: Izabelly</strong> izabellyglassiner@gmail.com</p>
+            <p><strong>Aluno de graduação: Julia </strong> juliaalmeidanasc8@gmail.com</p>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>IntegraCAR © <span id="year"></span> — Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

@@ -1,0 +1,276 @@
+/* ---------------------------------------------------
+   Cores baseadas no logo enviado
+--------------------------------------------------- */
+:root {
+    --blue: #1F71B8;
+    --pink: #E7A1B0;
+    --dark: #222;
+    --gray: #F5F5F5;
+    --white: #fff;
+    --radius: 14px;
+    --font: "Inter", Arial, sans-serif;
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font);
+    background: var(--gray);
+    color: var(--dark);
+}
+
+/* ---------------------------------------------------
+   HERO
+--------------------------------------------------- */
+.hero {
+  background: linear-gradient(to bottom right, var(--pink), var(--blue));
+  padding: 2.5rem;
+  color: var(--white);
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-area img {
+    width: 46px;
+    height: 46px;
+}
+
+.project-name {
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links a {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.nav-links a:hover {
+    opacity: 0.8;
+}
+
+/* Hero content */
+.hero-content {
+    margin-top: 2.5rem;
+    max-width: 600px;
+}
+
+.hero-content h1 {
+    font-size: 2.6rem;
+    line-height: 1.2;
+}
+
+.hero-content p {
+    margin-top: 10px;
+    font-size: 1.1rem;
+}
+
+.btn-primary {
+    display: inline-block;
+    margin-top: 18px;
+    padding: 12px 28px;
+    background: var(--white);
+    color: var(--blue);
+    font-weight: bold;
+    border-radius: var(--radius);
+    text-decoration: none;
+}
+
+.btn-primary:hover {
+    background: var(--pink);
+    color: var(--white);
+    transition: 0.2s;
+}
+
+/* ---------------------------------------------------
+   Sections
+--------------------------------------------------- */
+.section {
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.section.alt {
+    background: var(--white);
+}
+
+.section-title {
+    font-size: 2rem;
+    color: var(--blue);
+    margin-bottom: 10px;
+}
+
+.section-text {
+    max-width: 700px;
+    margin: auto;
+    color: #444;
+}
+
+/* Cards */
+.cards {
+    margin-top: 2rem;
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: var(--white);
+    padding: 1.5rem;
+    border-radius: var(--radius);
+    width: 260px;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+}
+
+.card h3 {
+    color: var(--pink);
+    margin-bottom: 8px;
+}
+
+/* Big card */
+.big-card {
+    margin-top: 2rem;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.big-card img {
+    width: 340px;
+    border-radius: var(--radius);
+}
+
+.big-card-text ul {
+    text-align: left;
+    list-style: disc;
+    margin-top: 10px;
+    margin-left: 1rem;
+}
+
+.big-card-text h3 {
+    color: var(--blue);
+}
+
+/* Contato */
+.contact-list p {
+    margin: 5px 0;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 1.5rem;
+    background: var(--blue);
+    color: var(--white);
+}
+
+/* ---------------------------------------------------
+   GitHub CTA (corrigido e centralizado)
+--------------------------------------------------- */
+.github-cta {
+  background: linear-gradient(180deg, rgba(255,255,255,0.9), rgba(255,255,255,0.95));
+  padding: 2rem 1.25rem;
+  margin: 1.5rem 0;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(31,113,184,0.06);
+}
+
+.github-inner {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;    /* centralizado */
+  align-items: center;       /* centraliza */
+  text-align: center;        /* centraliza textos */
+  gap: 1.5rem;
+}
+
+.github-left {
+  display: flex;
+  flex-direction: column;    /* tudo empilhado */
+  align-items: center;       /* centralizado */
+  gap: .7rem;
+}
+
+.gh-logo {
+  width: 56px;
+  height: 56px;
+  border-radius: 8px;
+  object-fit: cover;
+  box-shadow: 0 6px 18px rgba(31,113,184,0.08);
+}
+
+.github-left h3 {
+  margin: 0;
+  font-size: 1.15rem;
+  color: var(--blue);
+}
+
+.github-left .muted {
+  margin: 0.15rem 0 0;
+  color: #666;
+  font-size: .95rem;
+}
+
+.github-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;  /* centralizado */
+  gap: 1rem;
+}
+
+/* badge */
+.gh-badge img {
+  height: 28px;
+  display: block;
+}
+
+/* botão */
+.btn-gh {
+  background: linear-gradient(90deg, var(--pink), var(--blue));
+  color: white;
+  padding: 10px 18px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 700;
+  box-shadow: 0 8px 22px rgba(31,113,184,0.12);
+  transition: transform .12s ease, box-shadow .12s ease, opacity .12s;
+}
+
+.btn-gh:hover {
+  transform: translateY(-3px);
+  opacity: .95;
+  box-shadow: 0 14px 34px rgba(31,113,184,0.18);
+}
+
+/* responsividade */
+@media (max-width: 720px) {
+  .github-inner { flex-direction: column; align-items: center; text-align: center; }
+  .github-left { justify-content: center; }
+  .github-right { justify-content: center; width: 100%; margin-top: 0.5rem; gap: 1rem; }
+}
